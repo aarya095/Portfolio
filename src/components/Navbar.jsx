@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <a href="#home" className="navbar-logo">
-        Arashi<span>.</span>
+        Aarya<span>.</span>
       </a>
 
       <nav className="navbar-links" aria-label="Main navigation">
