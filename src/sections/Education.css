@@ -1,0 +1,173 @@
+
+.education-section {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 24px;
+}
+
+/* Section heading */
+
+.education-heading {
+  max-width: 600px;
+  margin-bottom: 65px;
+}
+
+.education-heading h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 400;
+  margin: 16px 0;
+}
+
+.education-intro {
+  max-width: 460px;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Timeline */
+
+.education-timeline {
+  position: relative;
+  padding-left: 55px;
+}
+
+/* Vertical connecting line */
+
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 35px;
+  left: 16px;
+  width: 1px;
+  background: #d8d0c2;
+}
+
+/* Individual education entry */
+
+.education-item {
+  position: relative;
+  padding: 0 0 55px;
+}
+
+.education-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Number marker */
+
+.education-marker {
+  position: absolute;
+  left: -55px;
+  top: 0;
+
+  width: 33px;
+  height: 33px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-terracotta);
+  border-radius: 50%;
+
+  background: var(--color-paper);
+  color: var(--color-terracotta);
+
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+}
+
+/* Education information */
+
+.education-content {
+  max-width: 700px;
+}
+
+.education-chapter {
+  font-size: 0.7rem;
+  letter-spacing: 0.13em;
+  color: var(--color-terracotta);
+  margin: 0 0 12px;
+}
+
+.education-content h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+
+.education-level {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin: 0 0 20px;
+}
+
+/* Qualification, location and years */
+
+.education-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+
+.education-details span {
+  position: relative;
+}
+
+/* Personal note */
+
+.education-note {
+  max-width: 560px;
+  color: var(--color-muted);
+
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.8;
+
+  margin: 18px 0 0;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+  .education-section {
+    margin: 75px auto;
+  }
+
+  .education-heading {
+    margin-bottom: 45px;
+  }
+
+  .education-timeline {
+    padding-left: 45px;
+  }
+
+  .education-timeline::before {
+    left: 13px;
+  }
+
+  .education-marker {
+    left: -45px;
+    width: 27px;
+    height: 27px;
+    font-size: 0.7rem;
+  }
+
+  .education-item {
+    padding-bottom: 42px;
+  }
+
+  .education-details {
+    flex-direction: column;
+    gap: 9px;
+  }
+}
